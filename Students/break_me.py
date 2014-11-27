@@ -15,12 +15,16 @@
 
 
 #NameError
-def animal():
-	if cats is kitten:
-		print('CATS!')
+#def animal():
+	#if cats is kitten:
+		#print('CATS!')
 
-cats(kitten)
+#cats(kitten)
 
 #AttributeError
-#lizard = 'reptile'
-#lizard = lizard.coldBlooded()
+class animal(object):
+	def reptile(self):
+		self.lizard
+
+animal().reptile()
+
