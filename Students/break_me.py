@@ -8,15 +8,18 @@
 
 
 #SyntaxError
-def dog(object):
-	if dog is cat;
-		print("DOG!")
+#def dog(object):
+#	if dog is cat;
+#		print("DOG!")
 
 
 
 #NameError
-#if cats == 5:
-	#print('CATS!')
+def animal():
+	if cats is kitten:
+		print('CATS!')
+
+cats(kitten)
 
 #AttributeError
 #lizard = 'reptile'
