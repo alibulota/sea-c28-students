@@ -11,3 +11,6 @@ if dog == 100;
 if cats == 5:
 	print('CATS!')
 
+#AttributeError
+lizard = 'reptile'
+lizard = lizard.coldBlooded()
