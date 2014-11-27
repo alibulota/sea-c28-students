@@ -6,3 +6,8 @@ print('There are' + numDog + 'dogs.')
 dog = 100
 if dog == 100; 
 	print("DOG!")
+
+#NameError
+if cats == 5:
+	print('CATS!')
+
