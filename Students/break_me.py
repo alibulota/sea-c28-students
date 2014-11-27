@@ -11,7 +11,11 @@ dog(numDogs)
 def dog(object):
 	if dog is cat;
 		print("DOG!")
+#Cris' ex:
+#def bad_func():
+#	eval("foo = 'This is bad")
 
+#bad_func()
 
 
 #NameError
