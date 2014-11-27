@@ -1,25 +1,25 @@
 #TypeError
-#numDogs = 100
-#def dog(object):
-	#if dog is numDogs:
-		#print('There are' + numDogs + 'dogs.')
+numDogs = 100
+def dog(object):
+	if dog is numDogs:
+		print('There are' + numDogs + 'dogs.')
 
-#dog(numDogs)
+dog(numDogs)
 
 
 #SyntaxError
-#def dog(object):
-#	if dog is cat;
-#		print("DOG!")
+def dog(object):
+	if dog is cat;
+		print("DOG!")
 
 
 
 #NameError
-#def animal():
-	#if cats is kitten:
-		#print('CATS!')
+def animal():
+	if cats is kitten:
+		print('CATS!')
 
-#cats(kitten)
+cats(kitten)
 
 #AttributeError
 class animal(object):
