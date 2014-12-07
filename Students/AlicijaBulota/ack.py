@@ -13,7 +13,8 @@ def ack(m, n):
         m > 0
         return ack(m - 1, ack(m, n - 1))
 
-
+#
+#
 #test m for inputs 0 to 3, n for inputs 0 to 4
 
 if __name__ == '__main__':
@@ -44,3 +45,22 @@ if __name__ == '__main__':
         (3, 4): 125
     }
 
+    for input_ in values:
+        assert ack(input_[3], input_[2]) == values[input]
+#
+#
+#test implementation of positive integers only
+
+    invalid_input = [
+        ('z', 100),
+        (*, 37),
+        (100, 'a')
+    ]
+
+    try:
+        output = ack(invalid_input[3], invalid_input[4])
+    except ValueError:
+        pass
+    else:
+        raise ValueError(u"No error raised for invalid input")
+    print u'All Tests Pass'
