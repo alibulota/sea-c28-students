@@ -74,3 +74,15 @@ for likes in fruit:
         print "Please answer with 'yes' or 'no'."
 print "The remaining fruits are:", fruit
 
+# copy of list, then reverse order
+fruits = like_fruit[:]
+
+rev_fruit = fruit[:]
+for i, fruit in enumerate(rev_fruit):
+    rev_fruit[i] = fruit[::-1]
+
+print rev_fruit
+
+# remove last item from list
+del rev_fruit[len(rev_fruit) - 1]
+print rev_fruit
