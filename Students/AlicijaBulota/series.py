@@ -89,4 +89,6 @@ if __name__ == '__main__':
 
     for input_, output in lucas_vals:
         assert lucas(input_) == output
-        assert sum_series(input_) == output
+
+    for n in range(0, 10):
+        assert sum_series(n, 2, 1) == lucas(n)
