@@ -43,3 +43,34 @@ print "The fruit basket now contains:", fruit
 del fruit[len(fruit) - 1]
 
 print "Last item removed from list:", fruit
+
+# ask user to choose fruit to remove
+print "Fruit Basket List:", fruit
+
+del_ans = raw_input("Select a fruit to remove from list: ")
+while del_ans in fruit:
+    fruit.remove(del_ans)
+print "Updated fruit list:", fruit
+
+# if list multiplied by two, ???
+#dub_fruit = fruit * 2
+#print "List of Fruits:", fruit
+#rem_fruit = raw_input("Select a fruit to remove from list: ")
+#while rem_fruit in dub_fruit:
+    #dub_fruit.remove(rem_fruit)
+
+#print "Remaining fruit:", dub_fruit
+
+# ask user fruit preferences, remove dislikes, print
+like_fruit = fruit[:]
+for likes in fruit:
+    choice = raw_input("Do you like: %s? " % fruit)
+    if choice.lower() == 'no':
+        while likes in fruit:
+            fruit.remove(likes)
+    elif choice.lower() == 'yes':
+        pass
+    else:
+        print "Please answer with 'yes' or 'no'."
+print "The remaining fruits are:", fruit
+
