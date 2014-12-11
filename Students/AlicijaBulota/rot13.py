@@ -9,5 +9,14 @@ def rot13(text):
 
 if __name__ == '__main__':
     code = "Python is AWESOME"
+    rot13_code = "Clguba vf NJRFBZR"
 
     print rot13(code)
+
+    assert rot13(rot13_code) == code
+
+    cris = "Is AWESOME"
+    assert rot13(rot13(cris)) == cris
+
+# test another line of text by encoding it, reversing the
+# encoding and then comparing it to the original text
