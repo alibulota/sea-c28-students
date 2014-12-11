@@ -1,6 +1,8 @@
 #TypeError
+def pig(tree, leaf):
+    for bird in tree:
+        return (leaf) - 100
 
-print("cat" + 100)
 
 #SyntaxError
 def dog(object):
