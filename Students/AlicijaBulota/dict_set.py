@@ -42,8 +42,17 @@ print "Mango" in d.values()
 
 
 # use dict contructor and zip: dict of numbers 0-15, hexadecimal.
+num = range(16)  # 16 values total including 0.
+hd = []
+for n in num:
+    hd.append(hex(n))
+
+hd_dict = dict(zip(num, hd))
+print hd_dict
+
 
 # use original dict: make dict use same keys, diff number of 'a's.
+
 
 # create s2, s3, s4 with 0-20 only divisible by 2, 3, 4.
 
