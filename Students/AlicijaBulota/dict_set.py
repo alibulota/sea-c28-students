@@ -4,11 +4,15 @@
 # create dictionary.
 d = {u"name": u"Chris",
     u"city": u"Seattle",
-    u"cake": u"chocolate"}
+    u"cake": u"chocolate",
+    u"fruit": u"pomegranate",
+    u"salad": u"chop",
+    u"pasta": u"lasagna"}
 
 
 # display dictionary.
-print d
+print '{name} is from {city}, and he likes {cake}, {fruit}, \
+{salad}, and {pasta}'.format(**d)
 
 
 # delete entry for "cake".
