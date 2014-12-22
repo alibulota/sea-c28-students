@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 # create dictionary.
-d = {"name": u"Chris",
-    u"city": "Seattle",
-    u"cake": "chocolate"}
+d = {u"name": u"Chris",
+    u"city": u"Seattle",
+    u"cake": u"chocolate"}
 
 
 # display dictionary.
