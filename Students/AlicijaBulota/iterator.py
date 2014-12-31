@@ -42,7 +42,7 @@ class IterateMe_2(object):
         return IterateMe_2(self.start, self.stop, self.step)
 
     def next(self):
-        self.current += 1
+        self.current += 1 * self.step
         if self.current < self.stop:
             return self.current
         else:
@@ -54,3 +54,20 @@ if __name__ == "__main__":
     print "first version"
     for i in IterateMe_1():
         print i
+
+    print "second version"
+    for i in IterateMe_2(2, 20, 2):
+        print i
+
+    print "xrange()"
+    for i in xrange(2, 20, 2):
+        print i
+
+    it = IterateMe_2(2, 20, 2)
+    for i in it:
+        if i > 10: break
+        print i
+
+    assert [i for i in it] == [2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+    print "test pass"
