@@ -8,7 +8,7 @@ def thanks(donor_dict):
     """full name. list of names, quit, or add name"""
     while True:
         donor_name = u'' + safe_input("Input name of donor for letter, \
-            'list' for listing of all donors or 'quit' to exit")
+            [list] for listing of all donors or [quit] to exit")
         if donor_name.lower() == u'list':
             for donor in donor_dict.keys():
                 print donor
@@ -19,7 +19,7 @@ def thanks(donor_dict):
             break
 
     amount = u'' + safe_input("Enter donation amount for \
-        %s. Type 'quit' to exit " % donor_name)
+        %s. Type [quit] to exit " % donor_name)
     if amount == u'quit':
         return donor_dict
     while True:
@@ -27,7 +27,7 @@ def thanks(donor_dict):
             amount = float(amount)
         except ValueError:
             amount = u'' + safe_input("Invalid entry. Please input number. \
-            Type 'exit' to quit.")
+            Type [quit] to exit.")
         if amount == u'quit':
             return donor_dict
     else:
@@ -74,3 +74,20 @@ def report(donations):
         print "{name:<{n}} {total:>10} {count:>10} {average:>10}".\
             format(n=spacing, name=donor[0], total=donor[1], count=donor[2],
                    average=donor[3])
+
+
+if __name__ == '__main__':
+    don_vals = {u"Bob": [1.50, 1000.30, 90.00],
+                u"Mary": [250.90, 30.00]}
+    while True:
+        d_input = u''
+        while d_input.lower() not in (u'thanks', u'report', u'quit'):
+            d_input = u'' + safe_input("Select send a Thank You [l] or \
+                Create a Report [r] or [quit]")
+
+    if d_input.lower() == u'l':
+        don_vals = thanks(don_vals)
+    elif d_input.lower() == u'r':
+        report(don_vals)
+    elif d_input.lower() == u'quit':
+        break
